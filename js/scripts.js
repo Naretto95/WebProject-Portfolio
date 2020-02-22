@@ -40,13 +40,17 @@ $trigger.waypoint(function(){
 	});
 },{offset:'100%'})
 
-jQuery(document).ready(function(){
-	jQuery('.skillbar2').each(function(){
-		jQuery(this).find('.skillbar2-bar').animate({
-			height:jQuery(this).attr('data-percent')
-		},6000);
+var $trigger2 =$('.skillbar2');
+
+$trigger2.waypoint(function(){
+	jQuery(document).ready(function(){
+		jQuery('.skillbar2').each(function(){
+			jQuery(this).find('.skillbar2-bar').animate({
+				height:jQuery(this).attr('data-percent')
+			},6000);
+		});
 	});
-});
+},{offset:'100%'})
 
 
 

@@ -28,10 +28,22 @@ jQuery(document).ready(function() {
 	
 });
 
+var $trigger =$('.skillbar');
+
+$trigger.waypoint(function(){
+	jQuery(document).ready(function(){
+		jQuery('.skillbar').each(function(){
+			jQuery(this).find('.skillbar-bar').animate({
+				width:jQuery(this).attr('data-percent')
+			},6000);
+		});
+	});
+},{offset:'100%'})
+
 jQuery(document).ready(function(){
-	jQuery('.skillbar').each(function(){
-		jQuery(this).find('.skillbar-bar').animate({
-			width:jQuery(this).attr('data-percent')
+	jQuery('.skillbar2').each(function(){
+		jQuery(this).find('.skillbar2-bar').animate({
+			height:jQuery(this).attr('data-percent')
 		},6000);
 	});
 });

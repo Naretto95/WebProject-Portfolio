@@ -174,6 +174,12 @@
           <div class="skillbar-bar" style="background: #23a197;"></div>
           <div class="skill-bar-percent">55%</div>
         </div> <!-- End Skill Bar -->
+
+        <div class="animated wow fadeInRight skillbar clearfix " data-percent="65%">
+          <div class="skillbar-title" style="background: #B14747;"><span>Java</span></div>
+          <div class="skillbar-bar" style="background: #D95656;"></div>
+          <div class="skill-bar-percent">60%</div>
+        </div> <!-- End Skill Bar -->
       </div>
   </section>
 
@@ -193,47 +199,47 @@
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
-          <a class="animated fadeInLeft portfolio-item wow slow" href="#">
+          <a class="animated fadeInLeft portfolio-item wow slow" href="https://github.com/Naretto95/OCamlProject-Mastermind">
             <span class="caption">
               <span class="caption-content">
-                <h2>blabla</h2>
-                <p class="mb-0">blabla</p>
+                <h2>Projet Ocaml</h2>
+                <p class="mb-0">Jeu du Mastermind sous Ocaml</p>
               </span>
             </span>
-            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio-1.png" alt="">
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="animated fadeInRight portfolio-item wow slow" href="#">
+          <a class="animated fadeInRight portfolio-item wow slow" href="https://github.com/Naretto95/PascalProject-Qwirkle">
             <span class="caption">
               <span class="caption-content">
-                <h2>blabla</h2>
-                <p class="mb-0">blabla</p>
+                <h2>Projet Pascal</h2>
+                <p class="mb-0">Jeu du Qwirkle sous Pascal</p>
               </span>
             </span>
-            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio-2.png" alt="">
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="animated fadeInLeft portfolio-item wow slow" href="#">
+          <a class="animated fadeInLeft portfolio-item wow slow" href="https://github.com/Naretto95/WebProject-Kunu">
             <span class="caption">
               <span class="caption-content">
-                <h2>blabla</h2>
-                <p class="mb-0">blabla</p>
+                <h2>Projet DevWeb #1</h2>
+                <p class="mb-0">Site complet développé pour une start-up</p>
               </span>
             </span>
-            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio-3.png" alt="">
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="animated fadeInRight portfolio-item wow slow" href="#">
+          <a class="animated fadeInRight portfolio-item wow slow" href="https://github.com/Naretto95/WebProject-Forme-ation">
             <span class="caption">
               <span class="caption-content">
-                <h2>blabla</h2>
-                <p class="mb-0">blabla</p>
+                <h2>Projet DevWeb #2</h2>
+                <p class="mb-0">Site complet développé pour une start-up</p>
               </span>
             </span>
-            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio-4.png" alt="">
           </a>
         </div>
       </div>
@@ -250,7 +256,7 @@
         <!--Section heading-->
         <h2 class="mb-5">Me contacter</h2>
         <!--Section description-->
-        <p class="lead mb-5">Avez-vous des questions? N'hésitez pas à me contacter directement, je ferais de mon mieux pour répondre au plus vite.</p>
+        <p class="lead mb-5">Vous avez des questions? N'hésitez pas à me contacter directement, je ferais de mon mieux pour répondre au plus vite.</p>
       </div>
     
         <div class="row">

@@ -265,8 +265,8 @@
                         <!--Grid column-->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
-                                <input type="text" id="name" name="name" class="form-control">
-                                <label for="name" class="">Votre nom</label>
+                            <h5>Nom :</h5>
+                                <input type="text" id="name" name="name" placeholder="Votre nom" class="form-control">
                             </div>
                         </div>
                         <!--Grid column-->
@@ -274,8 +274,8 @@
                         <!--Grid column-->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
-                                <input type="text" id="email" name="email" class="form-control">
-                                <label for="email" class="">Votre email</label>
+                            <h5>Email :</h5>
+                                <input type="text" id="email" name="email" placeholder="Votre email" class="form-control">
                             </div>
                         </div>
                         <!--Grid column-->
@@ -287,8 +287,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="md-form mb-0">
-                                <input type="text" id="subject" name="subject" class="form-control">
-                                <label for="subject" class="">Sujet</label>
+                            <h5>Objet :</h5>
+                                <input type="text" id="subject" name="subject" placeholder="Objet" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -301,8 +301,8 @@
                         <div class="col-md-12">
     
                             <div class="md-form">
-                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                <label for="message">Votre message</label>
+                            <h5>Message :</h5>
+                                <textarea type="text" id="message" name="message" placeholder="Votre message" rows="2" class="form-control md-textarea"></textarea>
                             </div>
     
                         </div>
@@ -312,7 +312,7 @@
                 </form>
     
                 <div class="text-center text-md-left">
-                    <a class="btn btn-dark " onclick="validateForm()">Envoyer</a>
+                    <a class="animated fadeInUp wow btn btn-dark " onclick="validateForm()">Envoyer</a>
                 </div>
                 <div class="status" id="status"></div>
             </div>
@@ -386,7 +386,6 @@
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/scripts.js"></script>
   <script>function validateForm() {
-    document.getElementById('status').innerHTML = "Sending...";
     formData = {
         'name'     : $('input[name=name]').val(),
         'email'    : $('input[name=email]').val(),
@@ -402,13 +401,13 @@
     success: function(data, textStatus, jqXHR)
     {
 
-        $('#status').text(data.message);
+        alert(data.message);
         if (data.code) //If mail was sent successfully, reset the form.
         $('#contact-form').closest('form').find("input[type=text], textarea").val("");
     },
     error: function (jqXHR, textStatus, errorThrown)
     {
-        $('#status').text(jqXHR);
+        alert(jqXHR);
     }
 });
   }</script>

@@ -64,10 +64,13 @@
               </a>
               <ul class="collapse list-unstyled" id="otherSections">
                   <li>
-                      <a class="scroll-link js-scroll-trigger" href="#section-3">blabla</a>
+                      <a class="scroll-link js-scroll-trigger" href="https://github.com/Naretto95/PascalProject-Qwirkle" target="_blank">Projet Pascal</a>
                   </li>
                   <li>
-                      <a class="scroll-link js-scroll-trigger" href="#section-4">blabla</a>
+                      <a class="scroll-link js-scroll-trigger" href="https://github.com/Naretto95/OCamlProject-Mastermind" target="_blank">Projet Ocaml</a>
+                  </li>
+                  <li>
+                      <a class="scroll-link js-scroll-trigger" href="https://github.com/Naretto95?tab=repositories" target="_blank">Autres</a>
                   </li>
               </ul>
           </li>
@@ -85,7 +88,7 @@
   <div class="content">
  
   <!-- open sidebar menu -->
-  <a class="animated fadeInLeft btn btn-primary btn-customized open-menu slow" href="#" role="button">
+  <a class="animated fadeInLeft btn btn-primary btn-customized open-menu slow" href="#" role="button" id="side">
       <i class="fas fa-align-left"></i> <span>Menu</span>
   </a>
 
@@ -111,7 +114,7 @@
         <div class="col-lg-10 mx-auto">
           <h2>À Propos</h2>
           <p class="lead mb-5">
-            "Je ne suis ni particulièrement intelligent ni particulièrement doué. Je ne suis que très, très curieux." <br>- <em>Albert Einstein</em></p>
+          Je suis actuellement étudiant en 1ère année d’école d’ingénieurs à l’EISTI (École internationaledes sciences du traitement de l’information) de Cergy et je suis à la recherche d’un stage, intégré dans ma formation, pour une durée de 12 semaines et pouvant débuter le 8 juin 2020.</p>
           <a class="animated fadeInUp wow btn btn-dark btn-xl js-scroll-trigger" href="https://drive.google.com/file/d/1LJB8SjMsjs-f_uGDCGw4ELYCZ4Sqd_Ac/view" target="_blank">Mon CV</a>
           <a class="animated fadeInUp wow btn btn-xl btn-primary js-scroll-trigger" href="#competences">Mes compétences</a>
         </div>
@@ -199,7 +202,7 @@
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
-          <a class="animated fadeInLeft portfolio-item wow slow" href="https://github.com/Naretto95/OCamlProject-Mastermind">
+          <a class="animated fadeInLeft portfolio-item wow slow" href="https://github.com/Naretto95/OCamlProject-Mastermind" target="_blank">
             <span class="caption">
               <span class="caption-content">
                 <h2>Projet Ocaml</h2>
@@ -210,7 +213,7 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="animated fadeInRight portfolio-item wow slow" href="https://github.com/Naretto95/PascalProject-Qwirkle">
+          <a class="animated fadeInRight portfolio-item wow slow" href="https://github.com/Naretto95/PascalProject-Qwirkle" target="_blank">
             <span class="caption">
               <span class="caption-content">
                 <h2>Projet Pascal</h2>
@@ -221,7 +224,7 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="animated fadeInLeft portfolio-item wow slow" href="https://github.com/Naretto95/WebProject-Kunu">
+          <a class="animated fadeInLeft portfolio-item wow slow" href="https://github.com/Naretto95/WebProject-Kunu" target="_blank">
             <span class="caption">
               <span class="caption-content">
                 <h2>Projet DevWeb #1</h2>
@@ -232,7 +235,7 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="animated fadeInRight portfolio-item wow slow" href="https://github.com/Naretto95/WebProject-Forme-ation">
+          <a class="animated fadeInRight portfolio-item wow slow" href="https://github.com/Naretto95/WebProject-Forme-ation" target="_blank">
             <span class="caption">
               <span class="caption-content">
                 <h2>Projet DevWeb #2</h2>
@@ -320,7 +323,6 @@
                 <div class="text-center text-md-left">
                     <a class="animated fadeInUp wow btn btn-dark " onclick="validateForm()">Envoyer</a>
                 </div>
-                <div class="status" id="status"></div>
             </div>
             <!--Grid column-->
     

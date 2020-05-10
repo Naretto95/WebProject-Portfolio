@@ -299,3 +299,13 @@ a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disa
 #message {
 	padding-bottom: 3rem;
 }
+
+#side{
+	background-color: rgb(16, 95, 148) !important;
+  border-color: rgb(16, 95, 148) !important;
+}
+
+#side:hover{
+	background-color: rgb(12, 74, 116) !important;
+  border-color: rgb(12, 74, 116) !important;
+}

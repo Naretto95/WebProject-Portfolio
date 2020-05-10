@@ -161,7 +161,7 @@ h6 {
 @media (min-width: 992px) {
   .portfolio-item {
     max-width: none;
-    margin: 0;
+    margin: 0.5rem;
   }
 
   .portfolio-item .caption {
@@ -179,7 +179,6 @@ h6 {
 
   .portfolio-item img {
     -webkit-transition: -webkit-clip-path 0.25s ease-out;
-    padding-left: 1rem;
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
   }

@@ -70,7 +70,7 @@
                       <a class="scroll-link js-scroll-trigger" href="https://github.com/Naretto95/OCamlProject-Mastermind" target="_blank">Projet Ocaml</a>
                   </li>
                   <li>
-                      <a class="scroll-link js-scroll-trigger" href="https://github.com/Naretto95?tab=repositories" target="_blank">Autres</a>
+                      <a class="scroll-link js-scroll-trigger" href="https://github.com/Naretto95?tab=repositories" target="_blank">Autre</a>
                   </li>
               </ul>
           </li>

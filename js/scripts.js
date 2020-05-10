@@ -39,7 +39,3 @@ $trigger.waypoint(function(){
 		});
 	});
 },{offset:'100%'})
-
-
-
-

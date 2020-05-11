@@ -257,6 +257,7 @@
 
       <div class="content-section-heading">
         <!--Section heading-->
+        <h3 class="text-secondary mb-0">Information</h3>
         <h2 class="mb-5">Me contacter</h2>
         <!--Section description-->
         <p class="lead mb-5">Vous avez des questions? N'hésitez pas à me contacter directement, je ferais de mon mieux pour répondre au plus vite.</p>

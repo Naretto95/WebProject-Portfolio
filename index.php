@@ -5,10 +5,10 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="Mon Site-CV" content="">
+  <meta name="Mon Portfolio" content="">
   <meta name="Lilian Naretto" content="">
 
-  <title>Mon Site-CV</title>
+  <title>Mon Portfolio</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +43,7 @@
       </div>
 
       <ul class="list-unstyled menu-elements">
-          <li class="active">
+          <li>
               <a class="scroll-link js-scroll-trigger" href="#top-content"><i class="fas fa-home"></i> Top</a>
           </li>
           <li>

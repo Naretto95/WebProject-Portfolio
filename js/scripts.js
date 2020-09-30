@@ -59,6 +59,11 @@ jQuery(document).ready(function() {
 
 var $trigger =$('.skillbar');
 
+if(window.matchMedia("(max-width: 992px)").matches){
+	$(".wow").removeClass("wow");
+	$(".animated").removeClass("animated");
+};
+
 $trigger.waypoint(function(){
 	jQuery(document).ready(function(){
 		jQuery('.skillbar').each(function(){

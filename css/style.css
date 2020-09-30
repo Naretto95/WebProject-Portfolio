@@ -1,13 +1,305 @@
-.sidebar a { color: #f35b3f; border-bottom: 1px dashed #f35b3f; text-decoration: none; transition: all .3s; }
-.sidebar a:hover, .sidebar a:focus { color: #f35b3f; border: 0; text-decoration: none; }
+body,
+html {
+  width: 100%;
+  height: 100%;
+  --scrollbarBG: #f1f1f1;
+  --thumbBG: #888;
+}
+
+body {
+  font-family: 'Source Sans Pro';
+}
+
+.nom{
+  color: #0E5484 !important;
+}
+
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+}
+
+.content-section {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.content-section-heading h2 {
+  font-size: 3rem;
+}
+
+.content-section-heading h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 45px;
+}
+
+.scroll-to-top:focus, .scroll-to-top:hover {
+  color: white;
+}
+
+.scroll-to-top:hover {
+  background: #343a40;
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+}
+
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 3rem;
+  padding-bottom: 18rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.masthead h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+  }
+  .masthead h1 {
+    font-size: 5.5rem;
+  }
+}
+
+.service-icon {
+  background-color: #fff;
+  color: #0E5484;
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.callout {
+  padding: 15rem 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-callout.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.callout h2 {
+  font-weight: 700;
+  display: block;
+  max-width: 40rem;
+}
+
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+
+.portfolio-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
+
+.portfolio-item .caption .caption-content h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.portfolio-item .caption .caption-content p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0.5rem;
+  }
+
+  .portfolio-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+
+  .portfolio-item .caption .caption-content {
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .portfolio-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+
+  .portfolio-item:hover .caption {
+    background-color: rgba(14, 85, 132, 0.822);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+}
+
+
+footer.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+footer.footer .social-link {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #0E5484;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+footer.footer .social-link:hover {
+  background-color: rgb(11, 67, 104);
+  text-decoration: none;
+}
+
+.content a {
+  color: #0E5484;
+}
+
+.content a:hover, .content a:focus,.content a:active {
+  color: rgb(11, 67, 104);
+}
+
+.content .btn-primary {
+  background-color: #0E5484 !important;
+  border-color: #0E5484 !important;
+  color: #fff !important;
+}
+
+.content .btn-primary:hover,.content .btn-primary:focus,.content .btn-primary:active {
+  background-color: rgb(11, 67, 104) !important;
+  border-color: rgb(11, 67, 104) !important;
+}
+
+.btn-secondary {
+  background-color: #ecb807 !important;
+  border-color: #ecb807 !important;
+  color: #fff !important;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background-color: #ba9106 !important;
+  border-color: #ba9106 !important;
+}
+
+.btn-dark {
+  color: #fff !important;
+}
+
+.btn {
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+.bg-primary {
+  background-color: #0E5484 !important;
+}
+
+.text-primary {
+  color: #0E5484 !important;
+}
+
+.text-secondary {
+  color: #ecb807 !important;
+}
+
+.img-profile {
+  max-width: 15rem;
+  max-height: 15rem;
+  border: 0.5rem solid rgba(14, 84, 132, 0.2);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+.sidebar a { color: #ffffff; border-bottom: 1px dashed #ffffff; text-decoration: none; transition: all .3s; }
+.sidebar a:hover, .sidebar a:focus { color: #ffffff; border: 0; text-decoration: none; }
 
 .sidebar h1,.sidebar h2 { margin-top: 10px; font-size: 38px; font-weight: 100; color: #555; line-height: 50px; }
 .sidebar h3 { font-size: 22px; font-weight: 300; color: #555; line-height: 30px; }
 .sidebar h4 { font-size: 18px; font-weight: 300; color: #555; line-height: 26px; }
 
 
-.sidebar ::-moz-selection { background: #f35b3f; color: #fff; text-shadow: none; }
-.sidebar ::selection { background: #f35b3f; color: #fff; text-shadow: none; }
+.sidebar ::-moz-selection { background: #ffffff; color: #fff; text-shadow: none; }
+.sidebar ::selection { background: #ffffff; color: #fff; text-shadow: none; }
 
 
 /***** Wrapper *****/

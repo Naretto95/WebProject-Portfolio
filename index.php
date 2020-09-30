@@ -19,9 +19,8 @@
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -104,7 +103,6 @@
       </h3>
       <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">En savoir plus</a>
     </div>
-    <div class="overlay"></div>
   </header>
 
   <!-- About -->
@@ -114,7 +112,7 @@
         <div class="col-lg-10 mx-auto">
           <h2>À Propos</h2>
           <p class="lead mb-5">
-          Je suis actuellement étudiant en 1ère année d’école d’ingénieurs à l’EISTI (École internationaledes sciences du traitement de l’information) de Cergy et je suis à la recherche d’un stage, intégré dans ma formation, pour une durée de 12 semaines et pouvant débuter le 8 juin 2020.</p>
+          Je suis actuellement étudiant en 2ème année d’école d’ingénieurs à l’EISTI (École internationaledes sciences du traitement de l’information) de Cergy et je suis à la recherche d’un stage, intégré dans ma formation, pour une durée de 12 semaines et pouvant débuter le 8 juin 2021.</p>
           <a class="animated fadeInUp wow btn btn-dark btn-xl js-scroll-trigger" href="https://drive.google.com/file/d/1LJB8SjMsjs-f_uGDCGw4ELYCZ4Sqd_Ac/view" target="_blank">Mon CV</a>
           <a class="animated fadeInUp wow btn btn-xl btn-primary js-scroll-trigger" href="#competences">Mes compétences</a>
         </div>
@@ -389,7 +387,6 @@
 
   <!-- Custom scripts -->
 
-  <script src="js/stylish-portfolio.min.js"></script>
   <script src="js/wow.js"></script>
   <script>new WOW().init();</script>
   <script src="js/jquery.waypoints.min.js"></script>

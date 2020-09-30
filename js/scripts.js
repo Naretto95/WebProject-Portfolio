@@ -7,10 +7,12 @@ jQuery(document).ready(function() {
         $('.sidebar').removeClass('active');
 	});
 
-	/*$('.sidebar .scroll-link').click(function() {
-		$(".sidebar").removeClass("active");
-		$(".scroll-link").removeClass("active");
-	});*/
+	$('.sidebar .scroll-link').click(function() {
+		if(window.matchMedia("(max-width: 992px)").matches){
+			$(".sidebar").removeClass("active");
+			$(".scroll-link").removeClass("active");
+		};
+	});
 
 
     $('.open-menu').on('click', function(e) {

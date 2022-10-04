@@ -73,3 +73,8 @@ $trigger.waypoint(function(){
 		});
 	});
 },{offset:'100%'})
+
+window.onload = function(){
+	//hide the preloader
+	document.querySelector("#preloader").style.display = "none";
+}

@@ -17,6 +17,8 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css" rel="stylesheet">
@@ -28,72 +30,39 @@
   <!-- Wrapper -->
 <div class="wrapper">
  
-  <!-- Sidebar -->
-  <nav class="sidebar">
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
 
-      <!-- close sidebar menu -->
-      <div class="dismiss">
-          <i class="fas fa-arrow-left"></i>
-      </div>
+  <!-- Navigation -->
+  <header id="header" class="d-flex flex-column justify-content-center">
 
-      <div class="logo">
-          <h3><a href="index.html">
-          </a></h3>
-      </div>
-
-      <ul class="list-unstyled menu-elements">
-          <li>
-              <a class="scroll-link js-scroll-trigger" href="#top-content"><i class="fas fa-home"></i>Accueil</a>
-          </li>
-          <li>
-              <a class="scroll-link js-scroll-trigger" href="#about"><i class="fas fa-user"></i> À Propos</a>
-          </li>
-          <li>
-              <a class="scroll-link js-scroll-trigger" href="#competences"><i class="fas fa-pencil-alt"></i> Mes compétences</a>
-          </li>
-          <li>
-            <a class="scroll-link js-scroll-trigger" href="#experiences"><i class="fas fa-file"></i> Expériences</a>
-          </li>
-          <li>
-              <a class="scroll-link js-scroll-trigger" href="#portfolio"><i class="fas fa-clipboard"></i> Portfolio</a>
-          </li>
-          <li>
-              <a href="#otherSections" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" role="button" aria-controls="otherSections">
-                  <i class="fas fa-sync"></i>Mes projets
-              </a>
-              <ul class="collapse list-unstyled" id="otherSections">
-                  <li>
-                      <a class="scroll-link js-scroll-trigger" href="http://django-vault.herokuapp.com/" target="_blank">Projet Django "Vault"</a>
-                  </li>
-                  <li>
-                      <a class="scroll-link js-scroll-trigger" href="https://github.com/Naretto95/Flask-Cryptography" target="_blank">Projet Flask</a>
-                  </li>
-                  <li>
-                      <a class="scroll-link js-scroll-trigger" href="https://github.com/Naretto95?tab=repositories" target="_blank">Autres</a>
-                  </li>
-              </ul>
-          </li>
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li>
+          <a class="nav-link scrollto js-scroll-trigger active" href="#top-content"><i class="bx bx-home"></i><span>Accueil</span></a>
+      </li>
+      <li>
+          <a class="nav-link scrollto js-scroll-trigger" href="#about"><i class="bx bx-user"></i><span>À Propos</span></a>
+      </li>
+      <li>
+          <a class="nav-link scrollto js-scroll-trigger" href="#competences"><i class="bx bx-file-blank"></i><span>Mes compétences</span></a>
+      </li>
+      <li>
+        <a class="nav-link scrollto js-scroll-trigger" href="#experiences"><i class="bx bx-server"></i><span>Expériences</span></a>
+      </li>
+      <li>
+          <a class="nav-link scrollto js-scroll-trigger" href="#portfolio"><i class="bx bx-book-content"></i><span>Portfolio</span></a>
+      </li>
       </ul>
+    </nav>
 
-      <div class="dark-light-buttons">
-          <a class="btn btn-primary btn-customized-4 btn-customized-dark" href="#" role="button">Dark</a>
-          <a class="btn btn-primary btn-customized-4 btn-customized-light" href="#" role="button">Light</a>
-      </div>
-
-  </nav>
-  <!-- End sidebar -->
+  </header>
   
   <!-- Content -->
   <div class="content">
- 
-  <!-- open sidebar menu -->
-  <a class="animated fadeInLeft btn btn-primary btn-customized open-menu slow" href="#" role="button" id="side">
-      <i class="fas fa-align-left"></i> <span>Menu</span>
-  </a>
 
   <!-- Header -->
   <header class="masthead d-flex" id="top-content">
-    <div class="animated fadeIn container text-center my-auto slow">
+    <div class="container text-center my-auto">
       <a>
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
       </a>
@@ -115,9 +84,9 @@
             "Fais de ta vie un rêve, et de ton rêve ta réalité."(Antoine de St Exupéry) 
             <br>
             Curieux et passionné, mon parcours est jalonné d'expériences qui m’ont permis d’acquérir des compétences très diverses. Diplômé en tant qu'ingénieur informatique à CY TECH, je suis actuellement en Corée du Sud, pour un retour en France en septembre 2023 </p>
-          <a class="animated fadeInUp wow btn btn-dark btn-xl js-scroll-trigger" href="https://drive.google.com/file/d/1LJB8SjMsjs-f_uGDCGw4ELYCZ4Sqd_Ac/view" target="_blank">Mon CV</a>
-          <a class="animated fadeInUp wow btn btn-xl btn-primary js-scroll-trigger" href="#competences">Mes compétences</a>
-          <a class="animated fadeInUp wow btn btn-xl btn-dark js-scroll-trigger" href="#experiences">Mon parcours</a>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="https://drive.google.com/file/d/1LJB8SjMsjs-f_uGDCGw4ELYCZ4Sqd_Ac/view" target="_blank">Mon CV</a>
+          <a class="btn btn-xl btn-primary js-scroll-trigger" href="#competences">Mes compétences</a>
+          <a class="btn btn-xl btn-dark js-scroll-trigger" href="#experiences">Mon parcours</a>
         </div>
       </div>
     </div>
@@ -131,61 +100,61 @@
         <h2 class="mb-5">Informatiques</h2>
       </div>
       <div class="row">
-        <div class="animated wow fadeInLeft skillbar clearfix " data-percent="45%">
+        <div class="skillbar clearfix " data-percent="45%">
           <div class="skillbar-title" style="background: #d35400;"><span>Pascal</span></div>
           <div class="skillbar-bar" style="background: #e67e22;"></div>
           <div class="skill-bar-percent">40%</div>
         </div> <!-- End Skill Bar -->
         
-        <div class="animated wow fadeInRight skillbar clearfix " data-percent="80%">
+        <div class="skillbar clearfix " data-percent="80%">
           <div class="skillbar-title" style="background: #2980b9;"><span>Python</span></div>
           <div class="skillbar-bar" style="background: #3498db;"></div>
           <div class="skill-bar-percent">75%</div>
         </div> <!-- End Skill Bar -->
         
-        <div class="animated wow fadeInLeft skillbar clearfix " data-percent="65%">
+        <div class="skillbar clearfix " data-percent="65%">
           <div class="skillbar-title" style="background: #2c3e50;"><span>C/C++</span></div>
           <div class="skillbar-bar" style="background: #2c3e50;"></div>
           <div class="skill-bar-percent">60%</div>
         </div> <!-- End Skill Bar -->
         
-        <div class="animated wow fadeInRight skillbar clearfix " data-percent="80%">
+        <div class="skillbar clearfix " data-percent="80%">
           <div class="skillbar-title" style="background: #46465e;"><span>HTML/CSS</span></div>
           <div class="skillbar-bar" style="background: #5a68a5;"></div>
           <div class="skill-bar-percent">75%</div>
         </div> <!-- End Skill Bar -->
         
-        <div class="animated wow fadeInLeft skillbar clearfix " data-percent="45%">
+        <div class="skillbar clearfix " data-percent="45%">
           <div class="skillbar-title" style="background: #333333;"><span>Javascript</span></div>
           <div class="skillbar-bar" style="background: #525252;"></div>
           <div class="skill-bar-percent">40%</div>
         </div> <!-- End Skill Bar -->
         
-        <div class="animated wow fadeInRight skillbar clearfix " data-percent="45%">
+        <div class="skillbar clearfix " data-percent="45%">
           <div class="skillbar-title" style="background: #27ae60;"><span>PHP</span></div>
           <div class="skillbar-bar" style="background: #2ecc71;"></div>
           <div class="skill-bar-percent">40%</div>
         </div> <!-- End Skill Bar -->
         
-        <div class="animated wow fadeInLeft skillbar clearfix " data-percent="45%">
+        <div class="skillbar clearfix " data-percent="45%">
           <div class="skillbar-title" style="background: #124e8c;"><span>OCaml</span></div>
           <div class="skillbar-bar" style="background: #4288d0;"></div>
           <div class="skill-bar-percent">40%</div>
         </div> <!-- End Skill Bar -->
 
-        <div class="animated wow fadeInRight skillbar clearfix " data-percent="60%">
+        <div class="skillbar clearfix " data-percent="60%">
           <div class="skillbar-title" style="background: #19746c;"><span>MySQL</span></div>
           <div class="skillbar-bar" style="background: #23a197;"></div>
           <div class="skill-bar-percent">55%</div>
         </div> <!-- End Skill Bar -->
 
-        <div class="animated wow fadeInLeft skillbar clearfix " data-percent="80%">
+        <div class="skillbar clearfix " data-percent="80%">
           <div class="skillbar-title" style="background: #B14747;"><span>Java</span></div>
           <div class="skillbar-bar" style="background: #D95656;"></div>
           <div class="skill-bar-percent">75%</div>
         </div> <!-- End Skill Bar -->
 
-        <div class="animated wow fadeInRight skillbar clearfix " data-percent="80%">
+        <div class="skillbar clearfix " data-percent="80%">
           <div class="skillbar-title" style="background: #4dc85e;"><span>Django</span></div>
           <div class="skillbar-bar" style="background: #4dc85e;"></div>
           <div class="skill-bar-percent">75%</div>
@@ -211,7 +180,7 @@
         <section id="resume" class="resume">
           <div class="container">
             <div class="row">
-              <div class="animated wow slow fadeInLeft col-lg-6">
+              <div class="col-lg-6">
                 <h3 class="resume-title">Formation</h3>
                 <div class="resume-item">
                   <h4>École d’ingénieurs</h4>
@@ -238,7 +207,7 @@
                   <p>Spécialité ISN (Informatique et Sciences du Numérique).</p>
                 </div>
               </div>
-              <div class="animated wow slow fadeInRight col-lg-6">
+              <div class="col-lg-6">
                 <h3 class="resume-title">Expériences professionnelles</h3>
                 <div class="resume-item">
                   <h4>Ingénieur DevSecOps | cybersécurité (12 mois)</h4>
@@ -281,7 +250,7 @@
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
-          <a class="animated fadeInLeft portfolio-item wow slow" href="https://github.com/Naretto95/OCamlProject-Mastermind" target="_blank">
+          <a class="portfolio-item" href="https://github.com/Naretto95/OCamlProject-Mastermind" target="_blank">
             <span class="caption">
               <span class="caption-content">
                 <h2>Projet Ocaml</h2>
@@ -292,7 +261,7 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="animated fadeInRight portfolio-item wow slow" href="https://github.com/Naretto95/PascalProject-Qwirkle" target="_blank">
+          <a class="portfolio-item" href="https://github.com/Naretto95/PascalProject-Qwirkle" target="_blank">
             <span class="caption">
               <span class="caption-content">
                 <h2>Projet Pascal</h2>
@@ -303,7 +272,7 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="animated fadeInLeft portfolio-item wow slow" href="https://github.com/Naretto95/Flask-Cryptography" target="_blank">
+          <a class="portfolio-item" href="https://github.com/Naretto95/Flask-Cryptography" target="_blank">
             <span class="caption">
               <span class="caption-content">
                 <h2>Projet Flask</h2>
@@ -314,7 +283,7 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="animated fadeInRight portfolio-item wow slow" href="http://django-vault.herokuapp.com/" target="_blank">
+          <a class="portfolio-item" href="http://django-vault.herokuapp.com/" target="_blank">
             <span class="caption">
               <span class="caption-content">
                 <h2>Projet Django "Vault"</h2>
@@ -365,8 +334,6 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts -->
-  <script src="js/wow.js"></script>
-  <script>new WOW().init();</script>
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/scripts.js"></script>
 

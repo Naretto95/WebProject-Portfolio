@@ -81,21 +81,30 @@ jQuery(document).ready(function() {
 		  $('.scroll-to-top').fadeOut();
 		}
 	  });
-});
 
-var $trigger =$('.skillbar');
+	  window.addEventListener('load', () => {
+		AOS.init({
+		  duration: 1000,
+		  easing: 'ease-in-out',
+		  once: true,
+		  mirror: false
+		})
+	  });
 
-$trigger.waypoint(function(){
-	jQuery(document).ready(function(){
-		jQuery('.skillbar').each(function(){
-			jQuery(this).find('.skillbar-bar').animate({
-				width:jQuery(this).attr('data-percent')
-			},6000);
+	  var $trigger =$('.skillbar');
+
+	$trigger.waypoint(function(){
+		jQuery(document).ready(function(){
+			jQuery('.skillbar').each(function(){
+				jQuery(this).find('.skillbar-bar').animate({
+					width:jQuery(this).attr('data-percent')
+				},6000);
+			});
 		});
-	});
-},{offset:'100%'})
+	},{offset:'100%'})
 
-window.onload = function(){
-	//hide the preloader
-	document.querySelector("#preloader").style.display = "none";
-}
+	window.onload = function(){
+		//hide the preloader
+		document.querySelector("#preloader").style.display = "none";
+	}
+});

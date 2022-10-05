@@ -75,6 +75,15 @@ jQuery(document).ready(function() {
 	  });
 	  let skilsContent = select('.skills-content');
 
+
+	  window.addEventListener('load', () => {
+		if (window.location.hash) {
+		  if (select(window.location.hash)) {
+			scrollto(window.location.hash)
+		  }
+		}
+	  });
+	  
 	if (skilsContent) {
 		new Waypoint({
 		element: skilsContent,

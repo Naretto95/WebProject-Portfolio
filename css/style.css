@@ -337,6 +337,10 @@ body::-webkit-scrollbar-thumb {
     border-right: 1px solid #e6e9ec;
     left: -300px;
   }
+
+  .mobile-nav-active {
+    overflow: hidden;
+  }
 }
 
 .nav-menu {
@@ -424,9 +428,6 @@ body::-webkit-scrollbar-thumb {
   display: block;
 }
 
-/**
-* Mobile Navigation 
-*/
 .mobile-nav-toggle {
   position: fixed;
   right: 10px;
@@ -458,70 +459,7 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(20, 116, 179);
 }
 
-/***** Content *****/
-
 .content { width: 100%; transition: all 0.3s; }
-
-.open-menu { position: fixed; top: 20px; left: 10px; z-index: 997; box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.2); }
-
-.open-menu.btn-customized,
-.open-menu.btn-customized:hover, 
-.open-menu.btn-customized:active, 
-.open-menu.btn-customized:focus, 
-.open-menu.btn-customized:active:focus, 
-.open-menu.btn-customized.active:focus,
-.open-menu.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active,
-.open-menu.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
-	box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.2);
-}
-
-
-/***** Buttons *****/
-
-a.btn-customized {
-	margin-left: 5px; margin-right: 5px; padding: .75rem 1.5rem; 
-	background: #0E5484; border: 0; border-radius: 4px; 
-	font-size: 16px; font-weight: 300; color: #fff; box-shadow: none;
-}
-
-a.btn-customized:hover, 
-a.btn-customized:active, 
-a.btn-customized:focus, 
-a.btn-customized:active:focus, 
-a.btn-customized.active:focus,
-a.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active,
-a.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
-	outline: 0; background : #0E5484; border: 0; color: #fff; box-shadow: none;
-}
-
-a.btn-customized-4 {
-	display: inline-block; width: 28px; height: 28px; margin: 0 3px; padding: 0; 
-	background: #444; border: 0; border-radius: 50%; 
-	font-size: 16px; font-weight: 300; color: #fff; box-shadow: none; text-indent: -999999px;
-}
-
-a.btn-customized-4.btn-customized-dark { background: #222; }
-a.btn-customized-4.btn-customized-light { background: #fff; }
-
-a.btn-customized-4.btn-customized-dark:hover, 
-a.btn-customized-4.btn-customized-dark:active, 
-a.btn-customized-4.btn-customized-dark:focus, 
-a.btn-customized-4.btn-customized-dark:active:focus, 
-a.btn-customized-4.btn-customized-dark.active:focus,
-a.btn-customized-4.btn-customized-dark.btn.btn-primary:not(:disabled):not(.disabled):active,
-a.btn-customized-4.btn-customized-dark.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
-	outline: 0; background: #555; border: 0; color: #fff; box-shadow: none;
-}
-
-a.btn-customized-4.btn-customized-light:hover, 
-a.btn-customized-4.btn-customized-light:active, 
-a.btn-customized-4.btn-customized-light:focus, 
-a.btn-customized-4.btn-customized-light:active:focus, 
-a.btn-customized-4.btn-customized-light.active:focus,
-a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disabled):active,
-a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
-	outline: 0; background: #555; border: 0; color: #fff; box-shadow: none;
-}
 
 .form-control{
 	box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.2);

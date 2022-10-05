@@ -8,9 +8,7 @@ jQuery(document).ready(function() {
 		}
 	  }
 	
-	  /**
-	   * Easy event listener function
-	   */
+	   // Easy event listener function
 	  const on = (type, el, listener, all = false) => {
 		let selectEl = select(el, all)
 		if (selectEl) {
@@ -22,16 +20,12 @@ jQuery(document).ready(function() {
 		}
 	  }
 	
-	  /**
-	   * Easy on scroll event listener 
-	   */
+	   // Easy on scroll event listener 
 	  const onscroll = (el, listener) => {
 		el.addEventListener('scroll', listener)
 	  }
 	
-	  /**
-	   * Navbar links active state on scroll
-	   */
+	   // Navbar links active state on scroll
 	  let navbarlinks = select('#navbar .scrollto', true)
 	  const navbarlinksActive = () => {
 		let position = window.scrollY + 200
@@ -49,9 +43,7 @@ jQuery(document).ready(function() {
 	  window.addEventListener('load', navbarlinksActive)
 	  onscroll(document, navbarlinksActive)
 	
-	  /**
-	   * Mobile nav toggle
-	   */
+	   // Mobile nav toggle
 	  on('click', '.mobile-nav-toggle', function(e) {
 		select('body').classList.toggle('mobile-nav-active')
 		this.classList.toggle('bi-list')
@@ -81,18 +73,33 @@ jQuery(document).ready(function() {
 		  $('.scroll-to-top').fadeOut();
 		}
 	  });
+	  let skilsContent = select('.skills-content');
 
-	  var $trigger =$('.skillbar');
-
-	$trigger.waypoint(function(){
-		jQuery(document).ready(function(){
-			jQuery('.skillbar').each(function(){
-				jQuery(this).find('.skillbar-bar').animate({
-					width:jQuery(this).attr('data-percent')
-				},6000);
+	if (skilsContent) {
+		new Waypoint({
+		element: skilsContent,
+		offset: '80%',
+		handler: function(direction) {
+			let progress = select('.progress .progress-bar', true);
+			progress.forEach((el) => {
+			el.style.width = el.getAttribute('aria-valuenow') + '%'
 			});
-		});
-	},{offset:'100%'})
+		}
+		})
+	}
+
+	const typed = select('.typed')
+  if (typed) {
+    let typed_strings = typed.getAttribute('data-typed-items')
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+    });
+  }
 });
 
 window.onload = function(){

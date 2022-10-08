@@ -388,6 +388,17 @@ body::-webkit-scrollbar-thumb {
   color: #45505b;
 }
 
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+  }
+
 @media (min-width: 992px) {
 
   .nav-menu a,
@@ -401,17 +412,6 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
   }
 
-  #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
-    overflow: hidden;
-    background: #fff;
-  }
-  
   #preloader:before {
     content: "";
     position: fixed;
@@ -425,6 +425,26 @@ body::-webkit-scrollbar-thumb {
     height: 60px;
     -webkit-animation: animate-preloader 1s linear infinite;
     animation: animate-preloader 1s linear infinite;
+  }
+  
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
   }
   
 }
@@ -493,26 +513,6 @@ body::-webkit-scrollbar-thumb {
 }
 .md-form h5{
 	float: left;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .resume .resume-title {

@@ -111,9 +111,30 @@ jQuery(document).ready(function() {
   }
 });
 
+
 window.onload = function(){
 	//hide the preloader
 	document.querySelector("#preloader").style.display = "none";
+	document.getElementById('contactform').addEventListener('submit', function(event) {
+		event.preventDefault();
+		$("#btnload").prop("disabled", true);
+		$("#btnload").html(
+			'<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Envois...'
+			);
+		// generate a five digit number for the contact_number variable
+		this.contact_number.value = Math.random() * 100000 | 0;
+		// these IDs from the previous steps
+		emailjs.sendForm('service_z9yfyma', 'template_aza6wwj', this)
+			.then(function() {
+				console.log('SUCCESS!');
+				alert("Message envoyé. Merci!");
+				location.reload();
+			}, function(error) {
+				console.log('FAILED...', error);
+				alert(error);
+				location.reload();
+			});
+	});
 }
 
 window.addEventListener('load', () => {

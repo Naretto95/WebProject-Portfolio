@@ -4,14 +4,8 @@ html {
   height: 100%;
   --scrollbarBG: #f1f1f1;
   --thumbBG: #888;
-}
-
-body {
+  scroll-behavior:smooth;
   font-family: 'Source Sans Pro';
-}
-
-.nom{
-  color: #0E5484 !important;
 }
 
 .btn-xl {
@@ -68,10 +62,6 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-}
-
-.text-faded {
-  color: rgba(255, 255, 255, 0.7);
 }
 
 .scroll-to-top {
@@ -263,17 +253,6 @@ footer.footer .social-link:hover {
 .content .btn-primary:hover,.content .btn-primary:focus,.content .btn-primary:active {
   background-color: rgb(11, 67, 104) !important;
   border-color: rgb(11, 67, 104) !important;
-}
-
-.btn-secondary {
-  background-color: #ecb807 !important;
-  border-color: #ecb807 !important;
-  color: #fff !important;
-}
-
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  background-color: #ba9106 !important;
-  border-color: #ba9106 !important;
 }
 
 .btn-dark {

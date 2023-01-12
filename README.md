@@ -23,12 +23,3 @@ If you would like to contribute to the website, please fork the repository and c
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
-
-* Inspiration
-* etc
-
-## Contact
-
-You can contact me via my website at https://narettolilian.me for more information about me and my work.

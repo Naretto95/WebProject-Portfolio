@@ -67,15 +67,15 @@ h6 {
 
 .scroll-to-top {
   position: fixed;
-  right: 15px;
-  bottom: 15px;
+  right: 1rem;
+  bottom: 1rem;
   display: none;
-  width: 50px;
-  height: 50px;
+  width: 2.75rem;
+  height: 2.75rem;
   text-align: center;
-  color: white;
-  background: rgba(52, 58, 64, 0.5);
-  line-height: 45px;
+  color: #fff;
+  background: rgba(90, 92, 105, 0.5);
+  line-height: 46px;
 }
 
 .scroll-to-top:focus, .scroll-to-top:hover {
@@ -83,7 +83,7 @@ h6 {
 }
 
 .scroll-to-top:hover {
-  background: #343a40;
+  background: #373941;
 }
 
 .scroll-to-top i {
@@ -121,7 +121,7 @@ h6 {
 
 .service-icon {
   background-color: #fff;
-  color: #0E5484;
+  color: #105f94;
   height: 7rem;
   width: 7rem;
   display: block;
@@ -227,33 +227,33 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #0E5484;
+  background-color: #105f94;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 footer.footer .social-link:hover {
-  background-color: rgb(11, 67, 104);
+  background-color: #1676b6;
   text-decoration: none;
 }
 
 .content a {
-  color: #0E5484;
+  color: #105f94;
 }
 
 .content a:hover, .content a:focus,.content a:active {
-  color: rgb(11, 67, 104);
+  color: #1676b6;
 }
 
 .content .btn-primary {
-  background-color: #0E5484 !important;
-  border-color: #0E5484 !important;
+  background-color: #105f94 !important;
+  border-color: #105f94 !important;
   color: #fff !important;
 }
 
 .content .btn-primary:hover,.content .btn-primary:focus,.content .btn-primary:active {
-  background-color: rgb(11, 67, 104) !important;
-  border-color: rgb(11, 67, 104) !important;
+  background-color: #1676b6 !important;
+  border-color: #1676b6 !important;
 }
 
 .btn-dark {
@@ -266,11 +266,11 @@ footer.footer .social-link:hover {
 }
 
 .bg-primary {
-  background-color: #0E5484 !important;
+  background-color: #105f94 !important;
 }
 
 .nom {
-  color: #0E5484 !important;
+  color: #105f94 !important;
 }
 
 .text-secondary {
@@ -397,7 +397,7 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     top: calc(50% - 30px);
     left: calc(50% - 30px);
-    border: 6px solid #0E5484;
+    border: 6px solid #105f94;
     border-top-color: #fff;
     border-bottom-color: #fff;
     border-radius: 50%;
@@ -506,7 +506,7 @@ body::-webkit-scrollbar-thumb {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0E5484;
+  border-left: 2px solid #105f94;
   position: relative;
 }
 
@@ -515,7 +515,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #0E5484;
+  color: #105f94;
   margin-bottom: 10px;
 }
 
@@ -549,7 +549,7 @@ body::-webkit-scrollbar-thumb {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #0E5484;
+  border: 2px solid #105f94;
 }
 
 .skills .progress {
@@ -590,7 +590,7 @@ body::-webkit-scrollbar-thumb {
 
 .contact .info i {
   font-size: 20px;
-  color: #0E5484;
+  color: #105f94;
   float: left;
   width: 44px;
   height: 44px;
@@ -625,7 +625,7 @@ body::-webkit-scrollbar-thumb {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #0E5484;
+  background: #105f94;
   color: #fff;
 }
 
